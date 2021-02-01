@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="ITS362%20Lab05%20Paul%20Cooper.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="ITS362%20Lab05%20Paul%20Cooper.js">
+    </script>
+    <title>Grade Average Calculator</title>
+</head>
+
+<body>
+    <div class="super">
+        <div class="therest">
+            <h2 class="glow">Grade Calculator</h2>
+
+            <h3>Enter your points earned below . . .</h3><br>
+            <br>
+            <input type="button" class="button" value="Save" onclick="savePoints()">
+            <input type="button" class="button" value="Load" onclick="loadPoints();">
+            <div class="dropdown">
+                <input type="button" class="dropbtn" value="List">
+                <div class="dropdown-content">
+                    <input type="button" class="button" id="addLab" value="Add Lab">
+                    <input type="button" class="button" id="removeLab" value="Remove Lab"><br />
+                    <input type="button" class="button" id="addQuiz" value="Add Quiz">
+                    <input type="button" class="button" id="removeQuiz" value="Remove Quiz"><br />
+                    <input type="button" class="button" id="addExam" value="Add Exam">
+                    <input type="button" class="button" id="removeExam" value="Remove Exam"><br />
+                    <input type="button" class="button" id="addProject" value="Add Project">
+                    <input type="button" class="button" id="removeProject" value="Remove Project"><br />
+                    <input type="button" class="button" id="addExtra" value="Add Extra Credit">
+                    <input type="button" class="button" id="removeExtra" value="Remove Extra Credit"><br />
+                    <input type="button" class="button" id="addPart" value="Add Participation">
+                    <input type="button" class="button" id="removePart" value="Remove Participation"><br />
+                </div>
+            </div>
+            <div id="outputDiv" style="height: 50px; width: 100%;"></div>
+
+            <table>
+                <tr>
+                    <td>Assessment</td>
+
+                    <td>Percentage of Total</td>
+
+                    <td>Total Points Earned</td>
+                </tr>
+
+                <tr>
+                    <td>Lab Assignment</td>
+
+                    <td>30%</td>
+
+                    <td id="labsT"></td>
+                </tr>
+
+                <tr>
+                    <td>Quiz</td>
+
+                    <td>10%</td>
+
+                    <td id="quizzesT"></td>
+                </tr>
+
+                <tr>
+                    <td>Exam</td>
+
+                    <td>30%</td>
+
+                    <td id="examsT"></td>
+                </tr>
+
+                <tr>
+                    <td>Project</td>
+
+                    <td>20%</td>
+
+                    <td id="projectsT"></td>
+                </tr>
+
+                <tr>
+                    <td>Extra Credit</td>
+
+                    <td>5%</td>
+
+                    <td id="extracreditsT"></td>
+                </tr>
+
+                <tr>
+                    <td>Participation</td>
+
+                    <td>10%</td>
+
+                    <td id="participationT"></td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+</body>
+</html>
